@@ -1,0 +1,1415 @@
+19/07/2022
+Introduction To Python
+
+   --> It is a General purpose,Dynamic,High level Programming language.
+   --> It supports Object Oriented Programming approach to develop an applications.
+   --> It is not intended tp work with a particular area, it can be used with web,enterprise,3char etc...
+   
+  * Python File Format --> (.py)
+__________________________________________
+     Links
+    --> https://www.python.org/downloads
+    --> https://www.pypi.org/
+__________________________________________
+   History of Python
+  --> Python was developed by GUIDO VAN ROSSUM in 1991.
+  --> Python is a language came from the language ABC which was invented by LEO.
+  --> Python is a name taken from a popular comedy show "MONTY PYTHON FLYING CIRCUS".
+__________________________________________
+  Why Python ??? Features of PYTHON ???
+
+  --> It is a open source Language.
+  --> It is Easy to use Learn.
+  --> It is an Interpreted Language.
+  --> It is object oriented Languuage.
+  --> Supports wide range of libraries and frame works.
+  --> Dynamic Memory Allocation(DMA).
+  --> Integrated ( it takes the features of c,c++,java etc...)
+________________________________________
+APPLICATIONS/ AREAS WHERE PYTHON IS USED
+  --> ARTIFICAL INTELLIGENGE
+  --> DATA SCIENCE
+  --> MACHINE LEARNING
+  --> DATA MINING
+  --> COMPUTER VISION
+  --> MOBILE APPLICATIONS
+  --> DESKTOP APPLICATIONS
+  --> ENTERPRISES APPLICATIONS
+  --> WEB APPLICATIONS *
+  --> SOFTWARE DEVELOPMENT
+  --> IMAGE PROCESSING
+________________________________________
+ WEB APPLICATIONS BUILD USING PYTHON
+  --> YOUTUBE
+  --> LINKED IN
+  --> INSTAGRAM
+  --> NETFLIX
+  --> MOZILLA FIREFOX
+  --> QUORA
+________________________________________
+LIMITATIONS OF PYTHON
+  --> It is slower in Execution ( C is faster than Python)
+  --> It is not good for gaming
+  --> Huge Libraries.
+________________________________________
+Python Frame Works
+  --> It has a wide range of libraries and frame works some of the popular frame works are :
+     Web Applications - flask,django,pyramid,cherrypy etc...
+________________________________________
+Popular Library
+  --> Date Time
+  --> os
+  --> csv
+  --> rd
+  --> json
+  --> sqlite3
+________________________________________
+Python Installation
+  --> Latest Version 3.10.5
+  --> Download link - https://www.python.org/downloads
+  --> add tick mark and download it
+  --> To check whether it is installed or not go to Command prompt and type python click on enter
+________________________________________
+Python Example
+ --> In this we will learn a sample program to print an Hello World
+ --> There are two ways to learn a Python Program
+     * Using interactive interpreter prompt
+     * using Script File
+ Using interactive interpreter prompt
+ Code --> print("HELLO WORLD")
+ Using Script File
+ -->  in command prompt
+_________________________________________
+21/07/2022
+Python Comments
+ --> Comments are helpful in defining the code and making others to understand the code.
+ --> # --> single line comment
+ --> ''' --> multiple line comments
+
+_________________________________________
+Python Variables
+ --> Variable is an entity in a program which holds a value and refer to the same by it's name.
+ --> python variables are also known as identifiers.
+ --> variable name contains alphabets, digits,underscore,but it has to start with either alphabet or underscroe.
+ --> It is recommened to use variable names in lower case.
+ Example 1: Assignginig single value to a single variable
+ a=3
+ Example 2: Assignginig same value to a multiple variable
+ a=b=3
+ Example 3: Assignginig multiple value to a multiple variable
+ a=3
+ b=9
+ 
+ Types of Variables:
+  1) Local variable: a variable which is declared inside a function and valid within the function
+  2) Global variable: a variable which is declared either inside or outside the function  but it is valid throught the program
+ How to Delete a Variable:
+ Syntax: del<variable>
+ Example: del a
+ 
+ Object Referance:
+  --> In python variables are the symbolic names that is reference to an object.
+  --> Variables are used to denote objects 
+   Ex: a=5(variable a is reference to object "5")
+       a=b=5(variable a and b are pointing out  to the same object "5")
+  NOTE: NO TWO OBJECTS HAVE A SAME VARIABLE AS REFERENCE.
+__________________________________________
+
+ DATA TYPES
+   1.Number
+    1.1 int
+    1.2 float
+    1.3 complex
+  2. dictionary
+  3. boolean
+  4. set
+  5. sequence type
+    5.1 strings
+    5.2 lists
+    5.3 tupples
+
+  1)Number: purpose of this datatype is to represent a number
+                       Ex: a=5(int)
+                           print(type(a)) 
+                       output: <class int>
+                       _______
+                       Ex: a=9.5(float)
+                       _______
+                       Ex: a= 3+ 9j(complex)
+
+
+
+
+ 3) Boolean: Boolean is a data type used to define a statement True or False 
+      True --> T or 1
+      False --> F or 0
+_____________________________________________________ 
+ 26/07/2022
+5) Sequence Type
+    
+5.1 Strings
+  --> string is a sequence of characters
+  --> Alphabets( A or a)
+  --> digits (0-9)
+  --> Spec. sys.(/,+)
+  --> In c strings are represented in "" double quotes
+  --> where as in python it is represented in '' " " ''' '''(single,double,triple quotes).
+
+ How to print a String
+ Ex: s="pfsd"
+     print(s)
+     print(type(s))
+    # print(s,end="")#print without space
+ Ex: s1="hello"
+     s2="welcome to PFSD course"
+     
+     print(s1)
+     print(s2)
+     print(s1[3])
+     print(s2[0:3}) --> Range
+     print(s2[4:]) --> slicing
+     print(s2*4) --> Repeatition operator with respect to string
+     print(s1+s2) --> Cancatination
+     print(s1,s2)
+______________________________________________________
+5.2 Lists
+  --> List is a collection of different data items.
+  --> List is similar to arrays in c, where list contains different datatype items where as arrays contains of same datatype items.
+  --> List may also contain duplicate values.
+  Ex:
+   List1=[3,"HELLO","PFSD",9.74]
+   print(List1)
+   print(List1[0:2])
+   print(List1[2: ])
+   print(List1*3)
+   print(List1+List1)
+ Note: Values in a list can be changed
+_______________________________________________________
+5.3 Tuple
+ --> Tuple is simalar to list
+ --> Like list, tuple also contain collection of different datatype items
+ --> values in the list can be changed where as values in the tuple cannot be changed
+  Ex: tup1=(3,"HELLO","PFSD",9.74)
+      print(tup1)
+   print(tup1[0:2])
+   print(tup1[2: ])
+   print(tup1*3)
+   print(tup1+tup1)
+___________________________________________________________
+2) Dictionary
+  --> It is an unordered set of key value pair items
+  EX:
+  dic={1:"ABC",2:"DEF",3:"GHI",4:"JKL"}
+  print(dic[1])
+  print(dic[3])
+  print(dic.keys())
+  print(dic.values())
+  dic.clear()
+  print(dic)
+ {}
+dic.pop(3)
+___________________________________________________________
+SET
+ set is an unordered collection of individual data items
+ EX: set1=set() -->Empty set
+     set2={3,"HELLO","PFSD",9.74}
+   print(set1)
+   print(set2)
+   set2.add(10)
+    print(set2)
+   set2.remove(5)
+    print(set2)
+    set2.clear()
+     print(set2)
+     del set2
+      print(set2)
+
+_________________________________________________________
+
+27/07/2022
+
+Python Keywords
+  --> Keywords are unique words which are pre-defined.
+  --> Python has 35 keywords
+
+  Ex: True,False,none,assert etc...
+  a=(True==1)
+  print(a)
+  #Ans is true
+
+  Ex:   a=(True==1)
+        b=a+10
+        print(b)
+        print(a)
+       #Ans is 11
+   Ex: a=(False==1)
+       b=a+(True==1)
+       print(b)
+_____________________________________________________________
+  Python Literals
+  --> Literals are defined as data that is given in a variable or constant.
+  --> python supports the following literals
+      1) String  literals
+      2) Numeric literals
+      3) Boolean literals
+      4) Special literals
+   --> String Literal
+    --> Ex: name="Basha"
+    Types of Strings
+  --> There are two types of strings supported in python
+     1) single line string
+     2) Multi line string
+
+  --> 1) Single line string
+           Ex: sl="ABC"
+  --> 2) Multi line string
+           Ex: ml='''ABC\
+                   DE'''
+               print(ml)
+   
+  
+   --> Numeric literals
+     * Numeric literals belongs to three different numeric types
+      Ex: 1) For Int
+            a=3
+      Ex: 2) For Float
+            a=9.74
+      Ex: 3) For Complex
+            a=3+9j
+     --> Boolean Literal
+      * Assinging a boolean value to variable
+       Ex:
+        a=(1==True)
+        b=(2==False)
+        c=a+50
+        d=b+100
+        print(a) #True
+        print(b) #False
+        print(c) #51
+        print(d) #100
+     --> Special Literal
+     * Special literal in python is none
+     Ex: a=none
+_________________________________
+ Python Decision Making Statements
+  --> Execution of the program depends on the decision making 
+  --> The different decision making statements are 
+    1) if
+    2) if else
+    3) nested if
+    4) else if
+   Ex: 
+     if a<3:
+      print(a)
+    Ex:
+     if a<3 :
+      print(a)
+     else :
+      print(b)
+
+
+
+
+
+
+
+____________________________________ 
+ NOTE:Itendation means giving 4 spaces by default. 
+______________________________________
+28/07/2022
+
+PYTHON LOOPS
+ FOR LOOP --> Syntax
+                for values in sequence:
+       Ex: a=[1,2,3]
+           for x in a:
+               print(x)
+ WHILE --> Syntax
+             while cond:
+      Ex: a=10
+          i=0
+           while i<a:
+              print(a)
+                 i+=1 #i++
+DO WHILE --> The do while loop (C) was replaced by a loop while with exit condition
+    NOTE: write an example for the same while with exit condition as an assignment
+          Ex: a=10
+               while True:
+                  print(a)
+                  a-=1
+                  if(a==0):
+                   break
+_______________________________
+PYTHON break
+ break --> break is a statement which is used to terminate from the current loop
+_______________________________
+Python continue
+ continue -->continue is a statement which is used to skip the statement after continue,but execution remains in the same loop
+________________________________
+Python pass
+ Pass --> pass is statement when we use nothing happens(if there is error it passes)
+   Ex: a=3
+       if a<3
+        pass
+__________________________________
+List of Programs
+*write a program to check whether the program is palindrome
+*write a program to display the palindromes between 1 to 100
+*write a program to check a program is prime or not
+*Write a program to display numbers upto 100
+*Write a program to swap two numbers without using third variable
+___________________________________
+02/08/2022
+
+Python Operators
+  --> Operator is a Symbol which perform an operation between operands.
+  --> Operators are  generally three types
+        1) Unary-a++
+        2) Binary-a+b
+        3) Ternary- a+b/c
+
+Operators in C                          Operators in Python
+1)Arithmetic                            1) Arithmetic 
+2)Relational                            2) Comparision
+3)Logical                               3) Logical
+4)Bitwise                               4) Bitwise
+5)Assignment                            5) Assignment
+6)INC/DEC                               6) Membership
+7)Conditional                           7) Identity
+8)Other(sizeof())
+
+
+1)Arithmetic Opertor
+  + --> Addition
+  - --> Subtraction
+  * --> Multiplication
+  / --> Division
+  % --> Modulo
+ // --> Floor Division
+
+2)Comaparision
+ < 
+ >
+ <=
+ >=
+ ==
+ !=
+
+3)Logical
+ and
+ or
+ not
+4)Bitwise
+ &
+ |
+ ^
+ >>
+ <<
+ ~
+ 
+5)Assignment
+ =
+Note: Arithmetic assignment operators
+      += --> a=a+b --> a+=b
+      -=
+      *=
+      /=
+      %=
+     //=
+
+6)Membership
+ in --> It returns true if the first operand is found in second operand
+ not in --> It returns false if the first operand is not found in second operand
+
+7) Identity
+   is --> It returns true if two different operands point out the same object
+  is not -->  It returns false if two different operands point out the different object
+____________________________________________________
+Python Functions
+
+  * C is a Function oriented programming Language.
+  --> Function is defined as set of instructions (GROUP OF OR BLOCK OF) which performs a specific task
+
+Syntax for python
+      def function_name(arguments):
+              
+ Ex:
+    def Square(num):
+         return num*num
+    print(Square(5)) #calling Function or function call
+
+Advantages of Functions
+  --> Reusability of a function
+  --> Size of the code decreases
+
+Classification of Functions
+  Two Types
+ 1) User Defined Functions
+ 2) InBuilt Functions(Built-in)
+
+ 1) Built-in: Functions which are pre-defined are called built-in Functions.
+     Ex: abs()
+         range()
+         print()
+         type()
+         input()
+         bin()....etc
+ 2) User defined function: functions which are defined by the user are called user defined function
+   Ex:
+    def add(a,b):
+         return a+b
+    print(add(2,3))
+_______________________________
+Function Arguments
+ --> The different Type of Function arguments which I can Use at the time of function cal, are
+   1) Default arguments
+   2) Keyword arguments
+   3) Required arguments
+
+Default Agrguments:
+ Ex:
+   def sample(num1,num2=10)
+     print(num1)
+     print(num2)
+   sample(5,20) # output 5,20
+Keyword arguments
+Ex:
+   def sample(num1=20,num2=30)
+      print(num1)
+     print(num2)
+    sample(5,10)
+   sample(num2=40,num1=60)
+Required arguments
+Ex:
+ def sample(num1,num2)
+      print(num1)
+     print(num2)
+    sample(5,10)--> Required
+   sample(20)# Error
+_________________________________________
+03/08/2022
+
+Python OOPs:
+ --> Python is Object oriented programming language.
+ --> Python allows us to design applications using object oriented approach
+ --> Some of the major principles of object-oriented programming principles are
+     1) Class
+     2) Object
+     3) Method
+     4) Inheritance
+     5) Polymorphism
+     6) Encapsulation
+     7) Data abstraction
+
+  Class:
+  --> Class is a collection of objects.
+  --> Classes in python will be defined using a keyword class followed by a class name.
+   Syntax:
+           class classname:
+                   statements
+        Ex:
+            class Student:
+                  id=10
+                  name="ABC"
+               
+              def display():
+                   print(id,name)
+
+ Object:
+  --> Object is an instance of a class
+  --> object is an entity which contains state and behaviour
+  Syntax:
+            obj_name=class_name(<arguments>)
+        
+     Ex:  std=Student()
+ 
+Example for class and Object
+    class Student:
+                  id=10
+                  name="ABC"
+               
+              def display():
+                   print(id,name)
+    std=Student()
+    std.display()
+
+#we will get error
+ #as we took parameters self so we must use self keyword
+  NOTE:
+ class Student:
+        id=10
+        name="ABC"    
+        def display(self):
+            print(self.id,self.name)
+std=Student()
+std.display()
+
+NOTE: 1) self is a keyword used to represent the instance of a class
+      2) self can access attributes and methods
+
+
+DELETING AN OBJECT
+ --> We can delete object or properties of an object using keyword del.
+ Ex:
+     class Student:
+        id=10
+        name="ABC"    
+        def display(self):
+            print(self.id,self.name)
+std=Student()
+std.display()
+del std.id
+del std
+ 
+
+Method:
+ --> Method is a function associated with a class
+ Ex: display method is an example
+
+Constructors:
+ --> Constructor is a special type of method which is used to intialise the instance members of a class
+ --> Constructors are two types 
+     1) parameterized constructors
+     2) non-parameterized constructors
+
+CREATING A CONSTRUCTOR:
+   --> Method __init__() stimulates the constructor of a class (double underscore)
+   --> this method is called class is initiated
+   --> It accepts self keywords as a first argument
+ Ex: 
+   Parameterized constructor
+class Student:
+     def __init__(self,id,name):
+           self.id=id
+           self.name=name    
+        def display(self):
+            print(self.id,self.name)
+std1=Student(10,"ABC")
+std2=Student(20,"DEF")
+std1.display()
+std2.display()
+_____________________________________________
+MORE THAN ONE CONSTRUCTOR IN A SINGLE CLASS:
+ Ex:
+   class Student:
+    def __init__(self):
+        print("FIRST")
+    def __init__(self):
+        print("SECOND")
+std=Student()
+#Last constructor gets executed
+
+  
+ 
+
+____________________________________________
+Inheritence
+ --> Acquiring the properties from one class to another class (base class to derived class)
+           (Parent class to child class)
+ --> Advantages code reusability
+
+There are 5 types of Inheritence
+1)Single
+2)Multiple
+3)Multilevel
+4)Hierarchical
+5)Hybrid
+_____________________________________________
+09/08/2022
+  
+Built-in Functions:
+             Some of the important built in functions in python are
+1.getattr(object,name)
+2.setattr(object,name,value)
+3.delattr(object,name)
+4.hasattr(object,name)
+
+ getattr --> It is used to access the attribute of an object
+ setattr --> It is used to set the value to an attribute of an object
+ delattr --> It is used to delete attribute of an object
+ hasattr --> It returns true if the attribute is found
+
+Ex: getattr:
+    class Student:
+      def __init__(self,id,name,cgpa):
+          self.id=id
+          self.name=name
+          self.cgpa=cgpa
+s=Student(10,"ABC",9.74)#'ABC' also will come
+
+print(getattr(s,"name"))
+
+   setattr:
+ class Student:
+      def __init__(self,id,name,cgpa):
+          self.id=id
+          self.name=name
+          self.cgpa=cgpa
+s=Student(10,"ABC",9.74)#'ABC' also will come
+
+print(getattr(s,"name"))
+setattr(s,"cgpa",9)
+print(getattr(s,"cgpa"))
+
+  delattr:
+ class Student:
+      def __init__(self,id,name,cgpa):
+          self.id=id
+          self.name=name
+          self.cgpa=cgpa
+s=Student(10,"ABC",9.74)#'ABC' also will come
+
+print(getattr(s,"name"))
+setattr(s,"cgpa",9)
+print(getattr(s,"cgpa"))
+
+
+ hasattr:
+ class Student:
+      def __init__(self,id,name,cgpa):
+          self.id=id
+          self.name=name
+          self.cgpa=cgpa
+s=Student(10,"ABC",9.74)#'ABC' also will come
+
+print(getattr(s,"name"))
+setattr(s,"cgpa",9)
+print(getattr(s,"cgpa"))
+ # delattr(s,"cgpa")
+ # print(getattr(s,"cgpa"))
+print(hasattr(s,"id"))
+
+_______________________________________
+
+  Built-in attributes:
+  --> Some of the important built-in attributed in python are:
+       1)__doc__
+       2)__dict__
+       3)__name__
+       4)__module__
+       5)__bases__
+
+  __doc__ --> It contains a string which has entire class documentation
+  __dict__ --> It is a dictionary which contains the information about class namespaces
+  __name__ --> It is used to access class name
+  __module__ --> It is used to access the module in which class is defined
+  __bases__ --> It is a tuple which contains base class names 
+__________________________________________
+  
+Inheritence
+ --> Acquiring the properties from one class to another class (base class to derived class)
+           (Parent class to child class)
+ --> Advantages code reusability
+
+There are 5 types of Inheritence
+1)Single
+2)Multiple
+3)Multilevel
+4)Hierarchical
+5)Hybrid
+ 
+  Single Inheritence:
+              Acquiring the properties from one base class to another class is called single 
+              Inheritence
+  Multileveln Inheritence:
+              Acquiring the properties from one base class to derived class from that class 
+              to another derived class is called multilevel Inheritence
+ Multiple Inheritence :
+              Acquiring the properties from multiple base classes to one derived class
+              is called Multiple Inheritence
+ Hierarchical Inheritance :
+              Acquiring the properties fron one base class to multiple derived classes
+              is called Hierarchical Inheritance
+ Hybrid Inheritance: 
+            Combination of Hierarchical and Multiple 
+
+
+Ex:
+   Single Inheritence
+            Syn:
+                 class Base:
+                      class-block
+                 class Derived(Base):
+                      class-block
+  
+ Multilevel Inheritence
+             Syn:
+                 class ClassA:
+                       class-block
+                 class ClassB(ClassA):
+                       class-block
+                 class ClassC(ClassB):
+                       class-block
+ 
+ Multiple Inheritence
+          Syn:
+             class Base1:
+                    class-block 
+             class Base2:
+                    class-block   
+             class Base3:
+                    class-block 
+            class Derived(Base1,Base2,Base3):
+                   class-block  
+      
+Hierarchical Inheritance:
+          Syn:
+            class Base:
+                 class-block
+            class Derived1(Base)
+                 class-block
+            class Derived2(Base)
+                 class-block
+
+Hybrid Inheritence:
+                Syn:
+             class Base:
+                 class-block
+            class Derived1(Base)
+                 class-block
+            class Derived2(Base)
+                 class-block
+            class NewDerived(Derived1,Dervied2)
+                 class-block
+
+Ex:
+    class 
+
+______________________________________________________________________________
+10/08/2022
+
+POLYMORPHISM
+
+ --> Polymorphism is a greek word where poly means "many" and morphism means "forms". so polymorphism refers to many forms.
+ --> Polymorphism is of two types
+     1) compile time polymorphism
+     2) run time polymorphism
+  
+   Compile time polymorphism:
+                         Method overloading is an example of compile time polymorphism
+      Ex:
+               class Sample:
+                    def display(self,num=10)
+                        return num
+               ob=Sample()
+               print(ob.display())
+               print(ob.display(30))
+
+
+
+  
+   Run time polymorphism:
+                      Method overriding is a best example of run time polymorphism
+
+
+     Ex:
+               class Base:
+                   def display(self):
+                      print("Hello")
+               class Derived(Base):
+                   def display(self):
+                      print("Good Morning")
+
+               ob=Derived()
+               ob.display()
+
+
+
+
+
+____________________________________________________________
+ ENCAPSULATION 
+  --> Encapsulation is defined as wrapping up of code and data together into a single unit
+______________________________________________________________
+Data Abstraction
+ --> Data abstraction is defined as providing essnetial information to outside world and hiding their background details
+ --> In python hiding can be done by __
+
+ Ex
+             class Student:
+                  id
+                  name
+                  __cgpa # This will be hided
+__________________________________________________________________
+PYTHON IDE
+
+ IDE --> Integrated development Environment
+ Famous Python IDE are Pycharm and sublime
+ 
+Pycharm Installation:
+ --> https://www.jetbrains.com/pycharm/download
+__________________________________________________________________
+11/08/2022
+
+Pyhton Modules://Python Libraries
+
+  --> Module is a file which contains definitions and statements
+  --> A module can define functions,classes and variables
+   Ex:
+        Creation of Module
+            
+          def add(a,b):
+             return a+b
+          def sub(a,b):
+             return a-b
+___________________________________________________________
+ How to Import Modules:
+  --> We can import functions,classes and variables from one module to another module using import statement
+   Ex:
+     import calc 
+     print(calc.add(10,20))
+
+ From import Statement:
+  --> This is used to import a specific attribute from a module rather than importing whole module
+   Syn:
+        from module_name import specific
+      
+   Ex:   
+     from math import sqrt,factorial
+     print((sqrt))
+   Note: from math import *
+__________________________________________
+Some of the important modules are:
+    1)datetime --> It provides classes for manuplating date and time
+    Ex: 
+    import datetime
+     a=datetime.datetime.now()
+     print(a)
+     print(a.year)
+   2)math --> It allows you to perform mathematical operations
+  Ex: 
+      import math
+      a=max(5,10,15)
+      b=min(5,10,15)
+      print(a,b)
+   3)re --> RE stands for regular expression
+      --> re contains set of functions that allows us to search for a string that matches
+     Ex:   import re
+             a="in KLU at KLU"
+             b=re.findall("KL",a)
+           
+              
+
+   Note: 1.findall
+         2.serach
+         3.split
+         4.sub
+4) calc -->
+_______________________________________________
+16/08/2022
+
+  Exception Handling:
+          Exception: Exception is a Phython object which represents an error
+              or Exception is an event which occurs during the execution of a program that disturbs 
+                  the normal flow of execution of a program
+   --> Errors are of two types
+         1) Syntax error(compile time error)
+         2) run time error
+  --> Errors or exceptions can be handled using exception handling
+  --> Exception handling in pyhton contains the following
+     1) try -->
+     2) except --> execute this code when there is an execption
+     3) else --> execute this code when there is no error
+     4) finally --> always runs the code
+
+  Syntax:
+         try:
+            block
+         exception Exception1:
+            block
+         except Exception2:
+            block
+         else :
+           else-block(Executes if there is no exception)
+
+ List of Exceptions:
+    1) Exception
+    2) BaseException
+    3) ArithematicError
+    4) BufferError
+    5) EOFError
+    6) ImportError
+_________________________________________________________________
+18/08/2022
+
+GITHUB INTEGRATION WITH PYCHARM IDE
+ 
+ Steps:
+  1) open pycharm ide --> VCS(version control software)--> Enable VCS
+  2) It displays a pop-up stating your project is getting integrated with git then click on ok
+  Commit:
+  Git--> click on commit(we get unversioned files)
+         select the files you want to commit
+         write a message for commit
+         click on commit
+         displays a message that it is commited
+
+ share project / push project
+       Git--> Github--> share project on github
+        It displays a dialogue box where you need to add your account
+        verify whether the same project is pushed in github or not
+
+   Gitlog:
+      Git--> show Gitlog
+
+___________________________________________________________
+23/08/2022
+
+Pytest
+  
+  --> Py test is a testing framework based on python.
+  --> It is mainly used to write and execute test cases using python programming language.
+  --> It helps you to write simple and scalable test cases for databases,API's, And UI
+  --> Py test is mainly used to write test cases for API's
+  --> Python works based on unit testing
+ 
+ Advantages of Py Test:
+  --> It is an open source
+  --> Py Test can run multiple tests in parallel,which can reduce the execution time.
+  --> Py test is very easy to use because of its simple syntax
+
+Installation
+  --> To start working with Py test we need to install  --> pip install pytest
+  --> To verify it is installed or not type --> pytest --version
+
+  Identifying test functions in Files:
+  
+  Functions --> test_sanmple()
+                    Ex: def test_sample():
+                               code
+
+ Files -->  test_name.py  or name_test.py
+              Ex: test_sample.py or sample_test.py specific file in a floder with 
+
+ Ex:
+   To demonstrate a testing concept:
+       Note: Assert is a python keyword which test the condition stating true or false.
+       Note:
+         To run all files in a floder -pytest filename.py
+         To run a specific file in a folder -pytest filename.py
+         To run a specific file in a folder with a detailed test case wise --pytest filename.py -v
+         To run a specific method in a file which is in a folder: -pytest filename.py::methodname
+         Testing -> Markers,Fixtures and parameterized test
+    To Install any libraries or modules or packages on any editor(IDE) alt+shift+enter simultaneously
+
+Markers:
+  --> Markers are used to set various features or attributes to a test functions
+  --> It allows you to execute a specific set of test cases
+  Syntax:
+        create a marker
+         @pytest.mark.<markername>
+ Note:
+    To run only marked test cases --> pytest -m <markername> -v
+
+ Fixtures:
+   --> Fixtures are used to provide input to the test case
+    Syntax:  creating a fixture
+              @pytest.fixtures
+ 
+Parameterized test: 
+  --> It is a test which will be done to run the test against multiple set of inputs by changing the parameter input
+Syntax:  creating a parameter
+              @pytest.parameterize
+_____________________________________________________________________________________________________________________________________________
+                                        MongoDB
+
+_____________________________________________________________________________________________________________________________________________
+
+
+                                    INTRODUCTION TO NOSQL
+
+
+  --> NOSQL --> NOT ONLY STRUCTURED QUERY LANGUAGE
+  --> NOSQL Data Bases-->Is a non relational data base
+   NOTE: SQL IS A RELATIONAL DATABASE
+
+  Relational Database:
+           --> It is a type of database which stores the data related to eachother
+           --> The system which maintains relational database is refered as RDBMS
+  RDBMS --> Tables
+  NOSQL --> Non Tables
+  --> NOSQL is specially designed for large data(BIG DATA)
+  
+
+  BIG DATA:
+      --> It can be defined using 3 characterstics
+          1)Volume(based on size)
+          2)Velocity(speed at which data arrives)
+          3)Varities(images,videos,comment)
+     --> All these 3 together can be defined as big data
+     --> In General Data is mostly in the form of
+             1)Structured
+             2)Unstuctured
+             3)Semi-structred
+             4)Unpredictable
+     --> Some of the popular noSQL databases are MONGO DB,DYNAMO DB(AMAZON USING THIS),COUCH DB,RIAK,NEO4J,CASSANDRA etc
+
+  Differences Between SQL and NOSQL
+                 SQL                                                                            NOSQL
+  --> DATA IS STORED IN TABLES                                                        --> DATA IS NOT STORED IN TABLES
+  --> SQL IS STRUCTURED                                                               --> NOSQL IS NOT STRUCTURED
+  --> SQL IS USED FOR SMALL DATA                                                      --> NOSQL IS USED FOR BIG DATA
+  --> SQL SCALABILITY IS LIMITED                                                       --> NOSQL SCALABILITY IS UNLIMITED
+ 
+  --> Types of NOSQL
+        1)Document(MONGO DB)
+        2)keyvalue
+        3)column
+        4)Graph based
+
+  NOTE: Mongo DB works on the principal of document type database
+______________________________________________________________________________________________________________________________________________
+                                                 INTRODUCTION TO MONGODB
+
+  --> MONGO DB is a document based database 
+  --> MONGO DB is a open source database with high performance
+  --> A document database consists of collections,fields
+  --> MONGO DB is highly scalable
+  --> MONGO DB stores data in JSON
+  --> It was developed by a new york based company 10gen(MongoDb)
+
+ Importance of Mongo DB
+ --> It does not require any relation
+ --> It does not require any schema
+ --> It does not require any tables
+ --> It does not require any Query Language
+ --> It does not require any Normalisation
+ --> It works on aggregation
+_________________________________________________________________________________________________________________________________
+
+                                             Differences Between Mongo DB and Oracle
+
+
+                Mongo DB                                                                         Oracle
+ --> It stores data in collections                                                  --> It stores data in tables
+ --> Unit of data is stored in documents                                            --> Unit of data is stored in records
+ --> Dynamic schema                                                                 --> Fixed schema
+ --> Crued operations are performed on collections                                  --> Crued operations are performed on table
+ --> In Mongo DB primary key uniquely identifies document                           --> In Oracle primary key uniquely identifies record
+ --> NOSQL                                                                          -->SQL
+____________________________________________________________________________________________________________________________________
+                                   MONGO DB ENVIRONMENT SET UP
+
+
+____________________________________________________________________________________________________________________________________
+30/08/2022
+
+                                   Introduction to Mongodb
+
+  --> MONGO DB is a document based database 
+  --> MONGO DB is the leading NOSQL
+  --> MONGO DB is written in c++
+  
+   Advantages:
+  --> Schema less or no schema
+  --> Fast performance(atleast 100 times faster than sql )
+  --> Easy to scale
+  
+
+  Features of Mongo DB
+  --> Scalability
+  --> Performance
+  --> High availability
+  --> Develop Easier
+  --> Develop Faster
+  --> Load Balancing
+
+  WHERE TO USE MONGO DB
+  
+  --> Big Data
+  --> data
+  --> user data management
+  --> content management delivery
+  --> mobile and social infrastructure
+
+  MONGO DB Data Types
+   1)String
+   2)Integer
+   3)Boolean
+   4)Double
+   5)Arrays
+   6)Min/Max
+   7)Null
+   8)Object
+   9)Symbol ....etc
+
+                      
+   DataBase Creation:
+
+    Syn:
+          use DB_NAME
+       
+       Ex:
+           > use KLU
+      output: switched to a db KLU
+
+  NOTE: 1) If the data base name does not exists, it will create a database with the same name.
+        2) If the data base name exist it will return an existing database name.
+   
+ NOTE: To check the currently selected database you need to type a command saying >db    #output ->KLU
+ NOTE: To see the list of databases 
+           > show dbs
+          #output -> 4(data base names)
+
+  Drop Database:
+    --> It is used to drop a database
+    
+      Syn:
+               db.dropDatabase()
+   NOTE: It will delete the select data base, if we have not selected any by default it will delete the database named "TEST"
+  
+
+  Creating Collection and Document:
+     
+     Collection: 
+       --> Collection is a set of documents.
+       Syn:
+             db.createCollection(name)
+    
+       Ex:
+          >use KLU
+          >db.createCollection(CSE)
+           
+            #output -> {"OK":1}
+
+   NOTE: To check the created collections 
+        >show collections
+ 
+   Drop Collection:
+        Syn:
+            db.collection_name.drop()
+      
+     Ex: db.CSE.drop()
+
+  Document:
+        
+    Syn:
+        db.collection_name.insert(document)
+
+    Ex:
+     db.CSE.insert(
+              {
+                 course: "PFSD",
+                 category: "Full Stack",
+                 detsils: {
+                              duration: 105,
+                              Faculty: "ABC"
+
+                              }  
+                    },
+              {
+                 course: "MSWD",
+                 category: "Full Stack",
+                 detsils: {
+                              duration: 10,
+                              Faculty: "DEF"
+
+                              }  
+                    },
+        )
+_________________________________________________________________________________
+01/09/2022
+
+  CRUD OPERATIONS:
+       The different operations that one can perform on a document are
+      C--> CREATE
+      R--> RETRIVE
+      U--> UPDATE
+      D--> DELETE
+
+  1. CREATE
+       (INSERT)
+      --> To create and insert a document
+      *INSERT SINGLE DOCUMENT
+      *INSERT MULTIPLE DOCUMENTS
+   Ex:  
+         db.CSE.insert(
+              {
+                 course: "PFSD",
+                 category: "Full Stack",
+                 detsils: {
+                              duration: 105,
+                              Faculty: "ABC"
+
+                              }  
+                    },
+              {
+                 course: "MSWD",
+                 category: "Full Stack",
+                 detsils: {
+                              duration: 10,
+                              Faculty: "DEF"
+
+                              }  
+                    },
+        )
+   2.RETRIVE
+      --> To retrive all documents 
+       
+       Syn:
+            db.Coll_Name.find()
+       Ex: db.CSE.find()
+     
+      --> TO retrive a specific document(based on fields)
+        Syn:
+            db.Coll_Name.find({}) 
+        Ex: db.CSE.find({course:"PFSD"})  #db.CSE.find({'course':'PFSD'})
+    NOTE: To retrive the data using  subfields we need to write all the subfields in it.
+     
+   3.UPDATE
+      --> To update a data in the document
+       Syn:
+          db.Coll_Name.update(Selection_criteria,Update_criteria)
+  
+       Example:
+            db.CSE.update({'course':'PFSD'},{$set{'course':'DBMS'}})
+
+   3.DELETE
+       --> It is used to delete a document from collection
+          
+       --> To delete or remove all documents that matches a condition 
+           Syn:
+                 db.Coll_Name.remove(Deletion_Criteria)
+           Ex:
+                db.CSE.remove(category:"FS")
+
+       --> To delete or remove a single document which matches the condition
+           Syn:
+               db.Coll_Name.remove(Deletion_Criteria,1)
+           Ex:
+               db.Coll_Name.remove(category:"FS",1)
+           NOTE: The document which is inserted first will be deleted first
+      --> To remove all documents
+           Syn:
+                db.Coll_Name.remove({})
+           Ex:
+                db.CSE.remove({})
+
+    FIND AND PRETTY FUNCTIONS
+
+      FIND FUNCTION:
+             --> This function is used to retrive documents
+
+            --> To find all documents 
+       
+                Syn:
+                      db.Coll_Name.find()
+                Ex: db.CSE.find()
+     
+            --> TO find a specific document(based on fields)
+              Syn:
+                  db.Coll_Name.find({}) 
+              Ex: db.CSE.find({course:"PFSD"})  #db.CSE.find({'course':'PFSD'})
+
+     PRETTY FUNCTIONS:
+           self learning  
+_____________________________________________________________________________________________________________________________
+
+ 07/09/2022
+
+
+ MongoDB Atlas:
+      Mongo DB atlas is a cloud environment which is provided by mongodb
+    --> sign up(try free)
+    --> To start working with mongo db atlas
+   Build a DB
+  3.options -> shared(free)
+
+  cloud provide & region -> AWS
+
+
+
+
+
+
+_________________________________________________________________________________________________________________________
+
+13/09/2022
+
+FIND AND PRETTY FUNCTIONS
+
+ --> Find function 
+        It is used to retrive the document
+
+
+
+ --> Pretty Function: They are used to used to display the results in a formatted way.
+____________________________________________________________________________________________________________________________
+
+Aggregation Function:
+         Aggregation is a way of processing a large number of documents in a collection by means of passing them through different stages.
+         The stages make up what is known as a pipeline.
+         The stages in a pipeline can filter, sort, group, reshape and modify documents that pass through the pipeline.
+    Ex: Filter
+   Syntax:
+_______________________________________________________________________________________
+
+Database Conncetivity(MONGODB COMPASS,SQL)
+  
+    a) Python Connectivity with MongoDb Compass
+         1) Install mongodb compass
+         2) create database and collections
+         3) install python driver --> PyMongo/pymongo
+           (How to install ???
+              pip install PyMongo
+           )
+        4) import MongoClient from pymongo 
+        5) create a connection to mongodb service using mongo client 
+           (pymongo.MongoClient("mongodb://127.0.0.1:27017")
+        6) Write and Execute the code 
+          (Database creation,collection creation,insert data,retrive or fetch data , update data ,delete data)
+        7) close the connection to mongodb(Client.close())
+  
+    b) Python connetivity with sql
+
+      (self learning)id
+_______________________________________________________________________________________________
+
+
+15/09/22
+                                  FRONT END 
+
+
+FLASK: Flask is a web application frame work which is written in python
+
+--> Flask is considered as microframework
+--> Some of the popular web application frame works are Flask,Django,cherryPY etc...
+--> Flask was developed by Armin.
+--> Flask is based on WSG tool Kit & Jinja2 engine
+--> default port number where flask is available is -->5000
+    URL --> http://127.0.0.1:5000
+
+WSGI : 
+   WSGI --> Web Server Gateway Interface
+ --> It is a tool kit used to develop python web application
+ --> It acts as an interface between web application & web server 
+  Web Application --> bookmyshow,cricbuzz,ola,gmail
+
+ Jinja2:
+ --> Jinga2 is a template engine
+ --> It combines a template with certain data source to render(access) a dynamic web page.
+
+
+Flask Environment Setup:
+  --> In order to install flask in your system must have pyhton with a version 2.7 or above
+  --> Flask can be installed using the following command
+        command --> pip install Flask
+
+
+First WEBApplication(python,Flask)
+ --> # Import Flask
+
+
+from flask import Flask
+
+# create an app instance
+app=Flask(__name__)
+
+# Rendering(route)
+@app.route("/")
+
+def sample():
+    return "Welcome to Flask"
+
+if __name__=="__main__":
+    app.run(debug=True)
